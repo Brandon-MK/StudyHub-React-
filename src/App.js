@@ -53,13 +53,13 @@ function App() {
                 Helpers
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item bold" href="#">
                   Notes
                 </a>
                 <a class="dropdown-item" href="#">
                   Academic Record
                 </a>
-                <div class="dropdown-divider"></div>
+
                 <a class="dropdown-item" href="#">
                   Reminder
                 </a>
@@ -68,6 +68,29 @@ function App() {
           </ul>
         </div>
       </nav>
+      <div class="jumbotron">
+        <h1 class="display-4">Welcome!</h1>
+        <p class="lead">
+          This is a simple student assistant that helps you keep track of your
+          academics, take notes, calaulate formulas and many more.
+        </p>
+        <hr class="my-4" />
+        <p>And before we forget what maybe your name?</p>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            aria-label=""
+            aria-describedby="basic-addon1"
+          />
+          <div class="input-group-prepend">
+            <button class="btn btn-outline-secondary" type="button">
+              Button
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
