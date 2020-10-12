@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/memesterhub/solverhub/blob/main/global_assets/Solverhub_logo_up.png?raw=true">
+</p>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
