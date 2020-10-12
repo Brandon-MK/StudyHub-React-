@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import App from "./App";
 import Timetable from "./timetable";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Note from "./Note";
 
 const Routers = () => {
   return (
@@ -54,7 +55,7 @@ const Routers = () => {
                 Helpers
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item bold" href="#">
+                <a class="dropdown-item bold" href="/Note">
                   Notes
                 </a>
                 <a class="dropdown-item" href="#">
@@ -72,6 +73,7 @@ const Routers = () => {
       <Switch>
         <Route exact path="/" component={App} />
         <Route path="/timetable" component={Timetable} />
+        <Route path="/Note" component={Note} />
       </Switch>
     </div>
   );
