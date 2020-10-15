@@ -4,13 +4,14 @@ import App from "./App";
 import Timetable from "./timetable";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Note from "./Note";
+import Cal from "./calculator";
 
 const Routers = () => {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-          Student
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="/">
+          StudyHub
         </a>
         <button
           class="navbar-toggler"
@@ -26,14 +27,9 @@ const Routers = () => {
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/">
-                Home <span class="sr-only">(current)</span>
-              </a>
-            </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
-                Math Formula
+              <a class="nav-link" href="/Calculator">
+                Calculator
               </a>
             </li>
 
@@ -42,30 +38,20 @@ const Routers = () => {
                 Timetable
               </a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Helpers
+            <li class="nav-item">
+              <a class="nav-link" href="./Note">
+                Notes
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item bold" href="/Note">
-                  Notes
-                </a>
-                <a class="dropdown-item" href="#">
-                  Academic Record
-                </a>
-
-                <a class="dropdown-item" href="#">
-                  Reminder
-                </a>
-              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Reminders
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Academic Records
+              </a>
             </li>
           </ul>
         </div>
@@ -74,6 +60,7 @@ const Routers = () => {
         <Route exact path="/" component={App} />
         <Route path="/timetable" component={Timetable} />
         <Route path="/Note" component={Note} />
+        <Route path="/Calculator" component={Cal} />
       </Switch>
     </div>
   );

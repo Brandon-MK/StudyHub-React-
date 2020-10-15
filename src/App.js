@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 function App() {
@@ -20,7 +20,6 @@ function App() {
             type="text"
             class="form-control"
             placeholder="Name"
-            aria-label=""
             aria-describedby="basic-addon1"
           />
           <div class="input-group-prepend">
